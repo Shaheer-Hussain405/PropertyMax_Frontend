@@ -1,0 +1,39 @@
+.parent {
+  font-family: "Inter", sans-serif;
+}
+.login::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 5px;
+  background-color: rgba(128, 128, 128, 0.691);
+}
+.signup::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 5px;
+  background-color: #059669;
+}
+.login::before,
+.signup::before {
+  content: "";
+  position: absolute;
+  bottom: -100px;
+  left: -15px;
+  width: 130px;
+  height: 130px;
+  transform: translateY(50px);
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.472);
+  transition: all 600ms ease;
+  z-index: 1;
+}
+.login:hover::before,
+.signup:hover::before {
+  transform: translateY(-30px);
+}

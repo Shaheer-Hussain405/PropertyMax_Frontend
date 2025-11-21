@@ -1,0 +1,49 @@
+.initial {
+  animation: scalein 1.5s ease 1;
+}
+@keyframes scalein {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.start {
+  display: inline-block;
+  animation: slideup 1.4s ease 1;
+  transition: transform 500ms ease;
+  position: absolute;
+  top: 6px;
+  left: 10px;
+}
+.start2 {
+  display: inline-block;
+  transition: transform 500ms ease;
+  transform: translateY(100px);
+  position: absolute;
+  top: 6px;
+  left: 10px;
+}
+@keyframes slideup {
+  0% {
+    transform: translateY(-100px);
+  }
+  60% {
+    transform: translateY(8px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.get_started:hover .start {
+  transform: translateY(-100px);
+}
+.get_started:hover .start2 {
+  transform: translateY(0);
+}
