@@ -22,10 +22,6 @@ const asideNav = [
   { id: 1, name: "Dashboard", icon: <MdSpaceDashboard />, link: "" },
   { id: 2, name: "Properties", icon: <FaBuilding />, link: "Properties" },
   { id: 3, name: "Tenants", icon: <FaUsers />, link: "/Demo/Tenants" },
-  { id: 4, name: "Leases", icon: <FaFileContract />, link: "/leases" },
-  { id: 5, name: "Payments", icon: <FaMoneyBillWave />, link: "/payments" },
-  { id: 6, name: "Maintenance", icon: <FaTools />, link: "/maintenance" },
-  { id: 9, name: "AI Help", icon: <VscRobot />, link: "/messages" },
   {
     id: 10,
     name: "Notifications",
@@ -36,7 +32,6 @@ const asideNav = [
 
 const tools = [
   { id: 3, name: "Settings", icon: <FaCog />, link: "/Demo/Settings" },
-  { id: 4, name: "Support & Help", icon: <FaHeadset />, link: "/support" },
   { id: 5, name: "Logout", icon: <FaSignOutAlt />, link: "/" },
 ];
 
@@ -54,7 +49,7 @@ const Sidenav = ({ isOpen, closely }) => {
         } shadow-2xl`}
       >
         <aside>
-          <nav className="my-2 h-[90vh] flex flex-col gap-10 ">
+          <nav className="my-2 h-[90vh] flex flex-col justify-between gap-10 ">
             <div>
               {asideNav.map((data) => {
                 return (
@@ -64,7 +59,7 @@ const Sidenav = ({ isOpen, closely }) => {
                     onClick={closely}
                     className={`group flex gap-3 py-3 px-4 ${
                       isOpen
-                        ? "ms-8 overflow-hidden flex"
+                        ? "ms-5 overflow-hidden flex"
                         : " mx-2 hidden sm:flex"
                     } relative transition-all ease duration-300 `}
                   >
