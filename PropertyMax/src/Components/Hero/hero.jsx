@@ -1,23 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
-import Gradient from "../../assets/Hero/gradient.svg";
 import curve from "../../assets/Hero/Wave Line.svg";
 import "./hero.css";
 
 const hero = () => {
   return (
     <>
-      <section className="relative overflow-hidden">
-        <img
-          src={Gradient}
-          alt="Background"
-          className="w-full absolute top-0 left-0 -z-10 object-cover min-h-screen"
-        />
+      <section className="kota-2 relative overflow-hidden ">
         <img
           src={curve}
           alt="curve"
-          className="absolute lg:top-20 top-60 left-0 -z-5"
+          className="absolute lg:top-20 top-60 left-0 "
         />
         <Navbar />
         <main className="container mx-auto mt-10 pt-14 pb-21">

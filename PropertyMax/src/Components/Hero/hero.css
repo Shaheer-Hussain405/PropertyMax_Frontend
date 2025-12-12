@@ -1,3 +1,11 @@
+.kota-2{
+  background-image: url(../../assets/Hero/gradient.svg);
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  background-size: cover;
+  min-height: 100vh;
+}
+
 .initial {
   animation: scalein 1.5s ease 1;
 }
